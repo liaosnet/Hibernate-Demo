@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		 <!-- 
+		 	必须属性 用户名和密码按照实际的来配置
+		 -->
+        <property name="connection.username">gbasedbt</property>
+        <property name="connection.password">GBase123</property>
+        <property name="connection.url">jdbc:gbasedbt-sqli://192.168.1.71:9088/testdb:GBASEDBTSERVER=gbase01;DB_LOCALE=zh_CN.utf8;CLIENT_LOCALE=zh_CN.utf8;IFX_LOCK_MODE_WAIT=30</property>
+        <property name="connection.driver_class">com.gbasedbt.jdbc.IfxDriver</property>
+        <property name="dialect">org.hibernate.dialect.GBasedbtDialect</property>
+
+        <!-- 常用属性  -->
+        <property name="show_sql">true</property>     
+<!--
+        <property name="format_sql">true</property>
+-->
+        <property name="hbm2ddl.auto">create</property>
+          
+        <!-- 将学生类 映射的xml加入到配置文件 -->
+        <mapping class="com.gbasedbt.hibernate.Student"/>
+	</session-factory>
+</hibernate-configuration>
