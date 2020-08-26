@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="dbtjdbc_2.0.1A2_1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/jars/dbtjdbc_2.0.1A2_1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jars/hibernate-5.3.12_GBase8s-2.0.1a2_2_v0.9.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
