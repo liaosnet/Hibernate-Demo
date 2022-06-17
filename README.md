@@ -5,7 +5,7 @@ Hibernate
 ### 使用到的环境
 IDEA + Maven  
 JDK-1.8  
-Hibernate-5.3.12 及对应的GBase 8s Dialect  
+Hibernate-5.4.24 及对应的GBase 8s Dialect  
 GBase 8s  
 JDBC驱动2.0.1a2_2  
  
